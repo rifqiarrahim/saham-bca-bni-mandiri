@@ -1,1 +1,1 @@
-web: bokeh serve —port=$PORT —allow-websocket-origin=saham-bca-bni-mandiri.herokuapp.com —address=0.0.0.0 —use-xheaders saham-bca-bni-mandiri.py
+web: gunicorn saham-bca-bni-mandiri:app --log-file -
