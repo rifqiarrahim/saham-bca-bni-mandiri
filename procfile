@@ -1,1 +1,1 @@
-at=error code=H14 desc="No web processes running" method=GET path="/"
+web: bokeh serve --port=$PORT --allow-websocket-origin=visdat-test.herokuapp.com --address=0.0.0.0 --use-xheaders myapp.py
