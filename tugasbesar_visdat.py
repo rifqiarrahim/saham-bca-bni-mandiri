@@ -18,7 +18,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Bokeh libraries
-from bokeh.io import output_file, output_notebook
+from bokeh.io import output_file, output_notebook, curdoc
 from bokeh.plotting import figure, show
 from bokeh.models import ColumnDataSource
 from bokeh.layouts import row, column, gridplot
@@ -222,4 +222,5 @@ tabs = Tabs(tabs=[panel_adj, panel_vol, panel_open, panel_close, panel_high, pan
 
 """## Show Plot"""
 
-bokeh serve --show myapp.py
+curdoc().add_root(tabs)
+curdoc().title = "Pergerakan Saham BCA, BNI, Mandiri"
