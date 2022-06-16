@@ -236,4 +236,4 @@ tabs = Tabs(tabs=[panel_adj, panel_vol, panel_open, panel_close, panel_high, pan
 
 """## Show Plot"""
 
-show(tabs)
+bokeh serve --show myapp.py
