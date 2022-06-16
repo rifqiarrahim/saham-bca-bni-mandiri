@@ -29,34 +29,20 @@ from bokeh.models import HoverTool, ColumnDataSource
 """##Import Data"""
 
 BBCA = pd.read_csv("./data/BBCA.JK.csv")
-BBCA.head()
-
-BBCA.info()
-
 BBNI = pd.read_csv("./data/BBNI.JK.csv")
-BBNI.head()
-
-BBNI.info()
-
 BMRI = pd.read_csv("./data/BMRI.JK.csv")
-BMRI.head()
-
-BMRI.info()
 
 """##Mengubah tipe kolom 'Date' menjadi DateTime"""
 
 BBCA['Date'] = pd.to_datetime(BBCA.Date)
-BBCA.info()
 
 BBNI['Date'] = pd.to_datetime(BBNI.Date)
-BBNI.info()
 
 BMRI['Date'] = pd.to_datetime(BMRI.Date)
-BMRI.info()
 
 """## Set output file extension"""
 
-output_file('Saham.html', title='Saham')
+#output_file('Saham.html', title='Saham')
 
 # Output the visualization directly in the notebook
 #output_notebook()
