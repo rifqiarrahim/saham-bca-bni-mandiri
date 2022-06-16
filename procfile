@@ -1,1 +1,1 @@
-web: bokeh serve --port=$PORT --allow-websocket-origin=myapp.herokuapp.com --address=0.0.0.0 --use-xheaders myapp.py
+at=error code=H14 desc="No web processes running" method=GET path="/"
